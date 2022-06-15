@@ -116,10 +116,22 @@
             color: #fff;
             border-bottom-color: #fff;
         }
+
+        .tinted-image {
+  background-image: 
+    /* top, transparent red */
+    linear-gradient(
+      rgba(0, 94, 173, 0.75), 
+      rgba(0, 94, 173, 0.75)
+    ),
+    /* your image */
+    url(ape-thinking-bg.jpg);
+    background-size:cover;
+}
     </style>
 </head>
 
-<body class="d-flex h-100 text-center text-white" style="background-color: #005EAD;">
+<body class="d-flex h-100 text-center text-white tinted-image">
 
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <header class="mb-auto">
